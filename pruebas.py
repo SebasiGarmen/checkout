@@ -11,7 +11,7 @@ class Checkout:
         total = 0
         for producto in listaProductos:
             total += producto.precio
-        return "El total es " + str(total)
+        print "El total es " + str(total)
 
 
 
@@ -19,7 +19,7 @@ class Checkout:
         productosEnLista = [""]
         for producto in listaProductos:
             productosEnLista += producto.nombre
-        return producto.nombre + " : " + str(producto.precio)
+        print producto.nombre + " : " + str(producto.precio)
 
 checkout = Checkout()
 listaProductos = [
@@ -28,5 +28,5 @@ listaProductos = [
     ProductoFisico("computadora", "0987541", 300 )
 ]
 
-print(checkout.imprimirLista(listaProductos))
+(checkout.imprimirLista(listaProductos))
 print(checkout.obtenerTotal(listaProductos))

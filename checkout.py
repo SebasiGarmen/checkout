@@ -12,19 +12,22 @@ class Checkout:
         total = 0
         for producto in listaProductos:
             total += producto.precio
-        return "El total = " + str(total)
+        return "Total = " + str(total)    #return termina el bucle
 
     def imprimirLista(self, listaProductos):
         for producto in listaProductos:
-            return producto.nombre + " = " + str(producto.precio)
+            print producto.nombre + " = " + str(producto.precio)
+
 
 
 checkout = Checkout()
 listaProductos = [
     ProductoFisico("tele", "2131241", 100 ),
     ProductoFisico("radio", "443121", 200 ),
-    ProductoFisico("computadora", "0987541", 300 )
+    ProductoFisico("computadora", "0987541", 300 ),
+    ProductoFisico("impresora", "0972348", 250 )
 ]
 
-print(checkout.imprimirLista(listaProductos))
+(checkout.imprimirLista(listaProductos))
+print("_________________")
 print(checkout.obtenerTotal(listaProductos))
