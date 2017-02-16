@@ -5,4 +5,4 @@ lista = range(11)
 def cubo(n):
     return n*n*n
 
-print(map(cubo, lista))    #<--primero funcion sin llamar, o sea sin el () , luego la lista
+print(map(cubo, lista))    #<--primero funcion sin llamar, o sea sin el () , luego la lista0
